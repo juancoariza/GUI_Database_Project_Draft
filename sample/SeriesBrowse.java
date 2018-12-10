@@ -56,6 +56,10 @@ public class SeriesBrowse {
      ****************************************************************/
     Stage stageHere;
     Parent rootHere;
+    
+    // chosenSeries is used to load values from the database, seen in detail in CharacterSelect.java
+    // Setting the integer value on button press loads the other sections of the switch statement
+    // in CharacterSelect.java
     static int chosenSeries;
 
     @FXML
@@ -103,11 +107,10 @@ public class SeriesBrowse {
 
         }
 
+        // loads screen elements and switches screen in the same Scene
         Scene scene = new Scene(rootHere);
         stageHere.setScene(scene);
         stageHere.show();
-
-
     }
 
 }
