@@ -18,6 +18,8 @@ public class Main extends Application {
     /* Default application launcher created by default in JavaFX project. The root is replaced with the first screen to
      * load in the program, be it a login screen or other beginning options for the user */
 
+    // URL reference to database. Stored in main and saved as static so any class can call upon it. Storing the URL
+    // reference in a variable increases coding efficiency and improves refactoring for future class use.
     final static String DATABASE_URL = "jdbc:derby:lib/books";
 
     @Override
