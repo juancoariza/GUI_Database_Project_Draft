@@ -67,9 +67,18 @@ public class CharacterSelect {
     @FXML
     static void loadCharacterDataFromSeries() {
 
+        // The database contains a Varchar dataset named SERIESMARK that indicates the series of origin for a character
+        // SF for Street Fighter, TK for Tekken, KOF for King of Fighters, and MK for Mortal Kombat
+        // Note: the database will be created with an existing alphabetical order for all character inputs regardless of 
+        // their series, so as to remove the need to alphabetize query results in other sections of the program
         try {
 
+            // static reference to variable set by SeriesBrowse.java on an user's button press
             switch (SeriesBrowse.chosenSeries) {
+                    // The character query sorts the database values aand return a list of all characters belonging to a 
+                    // given series, then places these values into the DatabaseCharacters variable
+                    
+                    // TODO: replace DatabaseCharacters with an array for multiple character references
                 case 1:
                     CHARACTER_QUERY = "SELECT FIRSTNAME INTO DatabaseCharacters FROM CHARNAME WHERE SERIESMARK = 'SF'";
                     break;
@@ -87,6 +96,14 @@ public class CharacterSelect {
 
             }
 
+            /* Once the correct value has been chosen, the program connects to the Database and provides the values in a row/
+             * Sample output for Case 2 (list of characters from Tekken in the Database): 
+             * Akuma 
+             * Asuka Kazama
+             * Alisa Bosconovitch
+             * ...
+             * */
+            
             Connection connection = DriverManager.getConnection(
                     Main.DATABASE_URL, "deitel", "deitel");
             Statement statement = connection.createStatement();
