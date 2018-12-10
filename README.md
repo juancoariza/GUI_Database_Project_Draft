@@ -17,7 +17,7 @@ The database stores two tables of information: Character and Movelist
 
 The character database stores the character's addition order to the table, the character's name, and their series of origin. the SERIESMARK is used to organize the characters by series of origin. When the user pressed the button corresponding to the series - e.g.the Tekken Button - the database will be organized into a column of alphabetical order by SERIESMARK TK 
 
-![](/Icons/Database1.PNG)
+![](https://github.com/juancoariza/GUI_Database_Project_Draft/blob/master/sample/Icons/Database1.PNG)
 
 ***Movelists***
 
@@ -27,7 +27,7 @@ A character's "movelist" is a series of joystick movement and button combination
 
 When viewing a joystick from above, there are 8 input directions the player can choose: up, down, left, right, and the diagonal combinations (up/right, up/left, down/right, down/left). These can be mapped using a standard computer numberpad as such:
 
-![](/Icons/NumpadNotation.jpg)
+![](https://github.com/juancoariza/GUI_Database_Project_Draft/blob/master/sample/Icons/NumpadNotation.jpg)
 
 
 *Buttons*
@@ -36,7 +36,7 @@ While buttons may vary from game to game, the functionality of the buttons remai
 
 NOTE: The vast majority of these games also use the same button/movement combinations, so the movelist table is vastly smaller in comparison to the list of characters.
 
-![](/Icons/Database2.PNG)
+![](https://github.com/juancoariza/GUI_Database_Project_Draft/blob/master/sample/Icons/Database2.PNG)
 
 
 
