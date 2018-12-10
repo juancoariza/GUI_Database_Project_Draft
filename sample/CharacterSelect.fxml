@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+  <AnchorPane fx:id="charPane" minHeight="0.0" minWidth="0.0" prefHeight="374.0" prefWidth="582.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CharacterSelect">
+      <children>
+          <Button fx:id="backToSeries" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToSeriesAction" text="Back" />
+      <ListView fx:id="charList" layoutX="62.0" layoutY="39.0" prefHeight="307.0" prefWidth="481.0" />
+      </children>
+  </AnchorPane>

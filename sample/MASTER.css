@@ -1,0 +1,106 @@
+/* MASTER css file */
+
+/* Universal Styling Groups (applied to all members that serve the same function)*/
+
+
+/*************************************************
+ * CHARACTER SELECT.FXML
+ ************************************************/
+
+
+/*************************************************
+ * CHARACTER SPECIFICS.FXML
+ ************************************************/
+
+
+/*************************************************
+ * MAIN SCREEN.FXML
+ ************************************************/
+#titleLabel {
+    -fx-text-fill: #3634b5;
+    -fx-font-size: 20px;
+    -fx-font-family: "Franklin Gothic Medium Cond";
+}
+
+#descriptionLabel {
+    -fx-text-fill: #fd432f;
+    -fx-font-style: italic;
+    -fx-font-size: 16px;
+    -fx-font-family: "Franklin Gothic Medium Cond";
+}
+
+#browseButton {
+    -fx-background-color: white;
+    -fx-background-position: center;
+    -fx-border-color: #3ca89f;
+    -fx-border-width: 5px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20 20 20 20;
+}
+
+
+/*************************************************
+ * MOVELIST DISPLAY.FXML
+ ************************************************/
+
+
+/*************************************************
+ * SEARCH SCREEN.FXML
+ ************************************************/
+
+
+/*************************************************
+ * SERIES BROWSE.FXML
+ ************************************************/
+#seriesBrowseDESC {
+    -fx-text-fill: #3634b5;
+    -fx-font-size: 20px;
+    -fx-font-family: "Franklin Gothic Medium Cond";
+
+}
+
+
+#SFButton {
+    -fx-background-color: white;
+    -fx-background-image: url('Icons/SF_Logo_156.png');
+    -fx-background-position: center;
+    -fx-border-color: #57bf5d;
+    -fx-border-radius: 20px;
+    -fx-border-width: 5px;
+    -fx-background-radius: 20 20 20 20;
+}
+
+#KOFButton {
+    -fx-background-color: white;
+    -fx-background-image: url('Icons/KOF_Logo_156.png');
+    -fx-background-position: center;
+    -fx-border-color: #57bf5d;
+    -fx-border-width: 5px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20 20 20 20;
+}
+
+#TKButton {
+    -fx-background-color: white;
+    -fx-background-image: url('Icons/TK_Logo_156.png');
+    -fx-background-position: center;
+    -fx-border-color: #57bf5d;
+    -fx-border-width: 5px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20 20 20 20;
+}
+
+#MKButton {
+    -fx-background-color: white;
+    -fx-background-image: url('Icons/MK_Logo_156.png');
+    -fx-background-position: center;
+    -fx-border-color: #57bf5d;
+    -fx-border-width: 5px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20 20 20 20;
+}
+
+#SFButton:hover, #KOFButton:hover, #TKButton:hover, #MKButton:hover {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
